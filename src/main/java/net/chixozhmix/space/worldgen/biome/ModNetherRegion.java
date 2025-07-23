@@ -20,9 +20,9 @@ public class ModNetherRegion extends Region {
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
         this.addBiome(mapper,
                 Climate.Parameter.point(1.0f), // temperature
-                Climate.Parameter.point(0.0f), // humidity
+                Climate.Parameter.point(0.2f), // humidity
                 Climate.Parameter.point(0.0f), // continentalness
-                Climate.Parameter.point(0.0f), // erosion
+                Climate.Parameter.point(0.2f), // erosion
                 Climate.Parameter.point(0.0f), // depth
                 Climate.Parameter.point(0.0f), // weirdness
                 0, // offset
@@ -30,9 +30,9 @@ public class ModNetherRegion extends Region {
 
         this.addBiome(mapper,
                 Climate.Parameter.point(1.0f), // temperature
-                Climate.Parameter.point(0.0f), // humidity
+                Climate.Parameter.point(0.3f), // humidity
                 Climate.Parameter.point(0.0f), // continentalness
-                Climate.Parameter.point(0.0f), // erosion
+                Climate.Parameter.point(0.3f), // erosion
                 Climate.Parameter.point(0.0f), // depth
                 Climate.Parameter.point(0.0f), // weirdness
                 0, // offset

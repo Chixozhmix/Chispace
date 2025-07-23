@@ -44,7 +44,9 @@
     "alexscaves:deep_sea_creature": [],
     "ambient": [],
     "axolotls": [],
-    "creature": [
+    "creature": [],
+    "misc": [],
+    "monster": [
       {
         "type": "biomancy:flesh_cow",
         "maxCount": 2,
@@ -64,8 +66,6 @@
         "weight": 30
       }
     ],
-    "misc": [],
-    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

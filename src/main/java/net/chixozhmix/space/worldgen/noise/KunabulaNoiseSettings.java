@@ -16,8 +16,8 @@ public class KunabulaNoiseSettings {
     public static NoiseGeneratorSettings createNetherLikeSettings(HolderGetter<DensityFunction> densityFunctions,
                                                                   HolderGetter<NormalNoise.NoiseParameters> noiseParameters) {
         NoiseSettings noiseSettings = NoiseSettings.create(
-                0,    // minY (как в Незере)
-                256,  // height (меньше, чем в overworld)
+                0,    // minY
+                256,  // height
                 1,    // noiseSizeX
                 2     // noiseSizeY
         );

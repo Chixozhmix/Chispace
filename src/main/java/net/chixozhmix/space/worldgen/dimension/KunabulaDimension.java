@@ -42,7 +42,7 @@ public class KunabulaDimension {
                 true, // ultraWarm - ультра-теплый климат
                 false, // natural - не естественное измерение
                 8.0, // coordinateScale - увеличенный масштаб координат как в Незере
-                false, // bedWorks - кровати взрываются
+                true, // bedWorks - кровати взрываются
                 true, // respawnAnchorWorks - можно использовать якорь возрождения
                 0, // minY
                 256, // height
@@ -50,7 +50,7 @@ public class KunabulaDimension {
                 BlockTags.INFINIBURN_NETHER, // infiniburn - бесконечное горение как в Незере
                 BuiltinDimensionTypes.NETHER_EFFECTS, // effectsLocation - эффекты Незера
                 0.1f, // ambientLight - низкое окружающее освещение
-                new DimensionType.MonsterSettings(true, true, ConstantInt.of(0), 0))); // monsterSettings - спавн мобов в темноте
+                new DimensionType.MonsterSettings(true, true, ConstantInt.of(7), 0))); // monsterSettings - спавн мобов в темноте
     }
 
     public static void bootstrapStem(BootstapContext<LevelStem> context) {
@@ -59,16 +59,16 @@ public class KunabulaDimension {
         HolderGetter<NoiseGeneratorSettings> noiseGenSettings = context.lookup(Registries.NOISE_SETTINGS);
 
 
-//         Создаем мульти-биомный источник как в Незере8
+//         Создаем мульти-биомный источник как в Незере
         NoiseBasedChunkGenerator noiseBasedChunkGenerator = new NoiseBasedChunkGenerator(
                 MultiNoiseBiomeSource.createFromList(
                         new Climate.ParameterList<>(List.of(Pair.of(
-                                        Climate.parameters(0.1F, 0.2F, 0.0F, 0.2F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.FLESH_GORGE)),
+                                        Climate.parameters(1.0F, 0.2F, 0.0F, 0.2F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.FLESH_GORGE)),
                                 Pair.of(
-                                        Climate.parameters(0.2F, 0.3F, 0.0F, 0.3F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.GASTRIC_GROTTO))
+                                        Climate.parameters(1.0F, 0.3F, 0.0F, 0.3F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.GASTRIC_GROTTO))
 
                         ))),
-                noiseGenSettings.getOrThrow(/*NoiseGeneratorSettings.NETHER*/ NoiseRegistry.KUNABULA_NOISE_SETTINGS));
+                noiseGenSettings.getOrThrow(NoiseRegistry.KUNABULA_NOISE_SETTINGS));
 
         LevelStem stem = new LevelStem(dimTypes.getOrThrow(KunabulaDimension.KAUPEN_DIM_TYPE), noiseBasedChunkGenerator);
 

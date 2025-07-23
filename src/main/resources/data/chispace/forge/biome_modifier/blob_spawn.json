@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "chispace:flesh_gorge",
+  "spawners": {
+    "type": "biomancy:flesh_blob",
+    "weight": 60,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

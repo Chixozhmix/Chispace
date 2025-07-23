@@ -1,6 +1,5 @@
 {
   "carvers": {},
-  "creature_spawn_probability": 1.0,
   "downfall": 0.0,
   "effects": {
     "fog_color": 3344392,
@@ -44,7 +43,9 @@
     "alexscaves:deep_sea_creature": [],
     "ambient": [],
     "axolotls": [],
-    "creature": [
+    "creature": [],
+    "misc": [],
+    "monster": [
       {
         "type": "biomancy:flesh_cow",
         "maxCount": 2,
@@ -64,8 +65,6 @@
         "weight": 30
       }
     ],
-    "misc": [],
-    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

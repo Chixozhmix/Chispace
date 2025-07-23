@@ -13,9 +13,6 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(ModBlocks.COLD_GRASS_BLOCK.get());
     private static final SurfaceRules.RuleSource STONE = makeStateRule(Blocks.STONE);
 
-    private static final SurfaceRules.RuleSource FLESH_BLOCK = makeStateRule(com.github.elenterius.biomancy.init.ModBlocks.FLESH.get());
-    private static final SurfaceRules.RuleSource FIBROUS_FLESH_BLOCK = makeStateRule(com.github.elenterius.biomancy.init.ModBlocks.FIBROUS_FLESH.get());
-
 
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
@@ -25,7 +22,7 @@ public class ModSurfaceRules {
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.COLD_PLAINTS),
                         SurfaceRules.sequence(
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK),
-                                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, DIRT) // Под плотью может быть земля
+                                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, DIRT)
                         )
                 )
         );
@@ -50,21 +47,6 @@ public class ModSurfaceRules {
 
     public static SurfaceRules.RuleSource makeRulesNether() {
         return SurfaceRules.sequence(
-
-//                // Правила для биомов Незера
-//                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.FLESH_GORGE), FLESH_BLOCK),
-//                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, FLESH_BLOCK),
-//
-//                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.GASTRIC_GROTTO), FIBROUS_FLESH_BLOCK),
-//                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, FIBROUS_FLESH_BLOCK),
-//                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, FIBROUS_FLESH_BLOCK),
-//
-//                // Оригинальные правила для бедрока
-//                SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor",
-//                        VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState())),
-//                SurfaceRules.ifTrue(SurfaceRules.not(SurfaceRules.verticalGradient("bedrock_roof",
-//                        VerticalAnchor.belowTop(5), VerticalAnchor.top())), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState()))
-
                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
                         SurfaceRules.state(com.github.elenterius.biomancy.init.ModBlocks.FLESH.get().defaultBlockState())),
                 SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR,
