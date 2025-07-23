@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "chispace:etherium"
+    },
+    "G": {
+      "item": "chispace:soul_gem"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "EGE",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "chispace:etherium_pickaxe"
+  },
+  "show_notification": true
+}

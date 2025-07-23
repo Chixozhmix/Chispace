@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "irons_spellbooks:blood_vial"
+    },
+    "F": {
+      "item": "biomancy:living_flesh"
+    },
+    "G": {
+      "item": "chispace:black_soul_gem"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "NBN",
+    "GFG",
+    "NBN"
+  ],
+  "result": {
+    "item": "chispace:flesh_orb"
+  },
+  "show_notification": true
+}

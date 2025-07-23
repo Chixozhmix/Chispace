@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "chispace:blob",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1662313514,
+
+    "spacing": 30,
+
+    "separation": 9,
+
+    "type": "minecraft:random_spread"
+  }
+}

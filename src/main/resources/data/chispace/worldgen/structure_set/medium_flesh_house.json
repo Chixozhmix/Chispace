@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "chispace:medium_flesh_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1698134451,
+
+    "spacing": 30,
+
+    "separation": 8,
+
+    "type": "minecraft:random_spread"
+  }
+}

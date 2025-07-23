@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chispace:block/stripped_cold_oak_log_top",
+    "side": "chispace:block/stripped_cold_oak_log"
+  }
+}

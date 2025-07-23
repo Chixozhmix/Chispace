@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "chispace:chudo_udo",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1823672306,
+
+    "spacing": 40,
+
+    "separation": 12,
+
+    "type": "minecraft:random_spread"
+  }
+}

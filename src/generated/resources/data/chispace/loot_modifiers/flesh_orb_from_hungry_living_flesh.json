@@ -1,0 +1,14 @@
+{
+  "type": "chispace:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "biomancy:entities/hungry_flesh_blob"
+    },
+    {
+      "chance": 0.1,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "chispace:flesh_orb"
+}

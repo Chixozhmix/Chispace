@@ -1,0 +1,39 @@
+{
+  "item.chispace.flesh_orb": "Flesh Orb",
+  "item.chispace.soul_gem": "Soul Gem",
+  "item.chispace.black_soul_gem": "Black Soul Gem",
+  "item.chispace.etherium": "Etherium",
+  "item.chispace.mordan_sigil": "Sigil of Mordan",
+
+  "item.chispace.etherium_pickaxe": "Etherium Pickaxe",
+
+  "item.chispace.flesh_staff": "Flesh Staff",
+
+  "block.chispace.soul_gem_ore": "Soul gem ore",
+  "block.chispace.desecration_altar": "Desecration Altar",
+  "block.chispace.cold_oak_leaves": "Leaves of cold oak",
+  "block.chispace.cold_oak_log": "Cold oak log",
+  "block.chispace.stripped_cold_oak_log": "Stripped cold oak log",
+  "block.chispace.cold_oak_sapling": "Cold oak sapling",
+  "block.chispace.cold_dirt": "Cold dirt",
+  "block.chispace.cold_grass_block": "Cold grass block",
+  "block.chispace.flesh_altar": "Flesh Altar",
+
+  "entity.chispace.mordan_servant": "Mordan Servant",
+  "entity.chispace.flesh_mimic": "Flesh Mimic",
+  "entity.chispace.summoned_flesh_blob": "Summoned Flesh Blob",
+
+  "biome.chispace.cold_plaints": "Cold Plants",
+  "biome.chispace.flesh_gorge": "Flesh Gorge",
+
+  "creativetab.chispace.orbs": "Orbs",
+  "creativetab.chispace.blocks": "Blocks",
+  "creativetab.chispace.items": "Items",
+
+  "message.chispace.flesh_orb_error": "You can't use the power of the sphere here.",
+  "message.chispace.sigil_error": "You can't use the power of the Sigil here.",
+  "message.chispace.flesh_altar_error": "You need to use 6 Living Flesh to invoke the power of the altar.",
+
+  "tooltip.flesh_orb.tooltip": "From this sphere comes a force capable of opening doors in space.",
+  "tooltip.sigil.tooltip": "The Sigil radiates cold and the stench of dirty water."
+}

@@ -1,0 +1,10 @@
+// 1.20.1	2025-07-13T16:29:04.5102421	Loot Tables
+1824a3802f0f3ccad8a14a85d68b219c310c90ca data/chispace/loot_tables/blocks/cold_dirt.json
+bfecacd7140cc5786dd850dd8f82ff8fb3f6f6dd data/chispace/loot_tables/blocks/cold_grass_block.json
+a550373403e070ec908a9c12e7db79984d1ca68c data/chispace/loot_tables/blocks/cold_oak_leaves.json
+e745213586173597311cce1e74cc547dda475744 data/chispace/loot_tables/blocks/cold_oak_log.json
+b999762820d0e8fae28eb4c8842d815af95bc589 data/chispace/loot_tables/blocks/cold_oak_sapling.json
+c4ba4b6820c8789b88bd5cd081e4805e577c5742 data/chispace/loot_tables/blocks/desecration_altar.json
+9256fce6ed88d6113aacba818b25f971d70e7688 data/chispace/loot_tables/blocks/flesh_altar.json
+11126783e8e3b47bdbe4461e0538bbcc3c46f66b data/chispace/loot_tables/blocks/soul_gem_ore.json
+0e292cc49c3f4771fb4c8c050bf8346a0b3fbc90 data/chispace/loot_tables/blocks/stripped_cold_oak_log.json

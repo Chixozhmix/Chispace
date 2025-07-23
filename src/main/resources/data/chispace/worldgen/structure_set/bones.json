@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "chispace:bones",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1714527644,
+
+    "spacing": 20,
+
+    "separation": 7,
+
+    "type": "minecraft:random_spread"
+  }
+}
