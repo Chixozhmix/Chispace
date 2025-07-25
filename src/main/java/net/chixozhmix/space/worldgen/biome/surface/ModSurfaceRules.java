@@ -1,12 +1,6 @@
 package net.chixozhmix.space.worldgen.biome.surface;
 
-import com.github.alexmodguy.alexscaves.server.block.ACBlockRegistry;
-import net.chixozhmix.space.block.ModBlocks;
-import net.chixozhmix.space.worldgen.biome.ModBiomes;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.SurfaceRules;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
 
 public class ModSurfaceRules {
 
