@@ -3,7 +3,6 @@ package net.chixozhmix.space.worldgen.dimension;
 import com.mojang.datafixers.util.Pair;
 import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.worldgen.biome.ModBiomes;
-import net.chixozhmix.space.worldgen.noise.KunabulaNoiseSettings;
 import net.chixozhmix.space.worldgen.noise.NoiseRegistry;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -17,10 +16,8 @@ import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.dimension.LevelStem;
-import net.minecraft.world.level.levelgen.DensityFunction;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
-import net.minecraft.world.level.levelgen.synth.NormalNoise;
 
 import java.util.List;
 import java.util.OptionalLong;
