@@ -2,6 +2,7 @@ package net.chixozhmix.space.entity.custom;
 
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.chixozhmix.space.entity.client.FleshMimicAttackGoal;
+import net.chixozhmix.space.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
@@ -143,7 +144,7 @@ public class FleshMimicEntity extends Monster implements GeoEntity {
             this.spawnAtLocation(new ItemStack(ItemRegistry.BLOOD_UPGRADE_ORB.get(), randomSource.nextInt(2)));
 
         if(randomSource.nextInt(6) == 0)
-            this.spawnAtLocation(new ItemStack(ItemRegistry.BLOOD_UPGRADE_ORB.get()));
+            this.spawnAtLocation(new ItemStack(ModItems.FLESH_STAFF.get()));
     }
 
     /* BOSS BAR */
