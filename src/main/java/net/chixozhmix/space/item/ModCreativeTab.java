@@ -20,7 +20,6 @@ public class ModCreativeTab {
                     .title(Component.translatable("creativetab.chispace.orbs"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.FLESH_ORB.get());
-                        output.accept(ModItems.MORDAN_SIGIL.get());
                     })
                     .build());
 
@@ -31,12 +30,6 @@ public class ModCreativeTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SOUL_GEM_ORE.get());
                         output.accept(ModBlocks.DESECRATION_ALTAR.get());
-                        output.accept(ModBlocks.STRIPPED_COLD_OAK_LOG.get());
-                        output.accept(ModBlocks.COLD_OAK_LEAVES.get());
-                        output.accept(ModBlocks.COLD_OAK_LOG.get());
-                        output.accept(ModBlocks.COLD_OAK_SAPLING.get());
-                        output.accept(ModBlocks.COLD_GRASS_BLOCK.get());
-                        output.accept(ModBlocks.COLD_DIRT.get());
                         output.accept(ModBlocks.FLESH_ALTAR.get());
                     })
                     .build());

@@ -3,15 +3,12 @@ package net.chixozhmix.space.datagen.loot;
 import net.chixozhmix.space.block.ModBlocks;
 import net.chixozhmix.space.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -31,15 +28,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.DESECRATION_ALTAR.get());
         this.dropSelf(ModBlocks.FLESH_ALTAR.get());
-
-        this.dropSelf(ModBlocks.COLD_OAK_LOG.get());
-        this.dropSelf(ModBlocks.STRIPPED_COLD_OAK_LOG.get());
-        this.dropSelf(ModBlocks.COLD_OAK_SAPLING.get());
-        this.dropSelf(ModBlocks.COLD_GRASS_BLOCK.get());
-        this.dropSelf(ModBlocks.COLD_DIRT.get());
-
-        this.add(ModBlocks.COLD_OAK_LEAVES.get(), block -> createLeavesDrops(block, ModBlocks.COLD_OAK_SAPLING.get(),
-                NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createSoulBlockDrop(Block pBlock, Item item) {

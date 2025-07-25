@@ -25,13 +25,9 @@ public class ModPlacedFeature {
 
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, SOUL_GEM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeature.COLD_PLANTS_SOUL_GEM_ORE_KEY),
+        register(context, SOUL_GEM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeature.SOUL_GEM_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-
-        register(context, COLD_OAK_KEY, configuredFeatures.getOrThrow(ModConfiguredFeature.COLD_OAK_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
-                        ModBlocks.COLD_OAK_SAPLING.get()));
     }
 
     private static ResourceKey<PlacedFeature> resourceKey(String name) {

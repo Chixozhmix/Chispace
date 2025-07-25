@@ -6,7 +6,6 @@ import net.chixozhmix.space.worldgen.ModConfiguredFeature;
 import net.chixozhmix.space.worldgen.ModPlacedFeature;
 import net.chixozhmix.space.worldgen.biome.ModBiomes;
 import net.chixozhmix.space.worldgen.dimension.KunabulaDimension;
-import net.chixozhmix.space.worldgen.dimension.ModDimension;
 import net.chixozhmix.space.worldgen.noise.KunabulaNoiseSettings;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
@@ -22,7 +21,6 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             // Объединяем оба DimensionType в одном методе
             .add(Registries.DIMENSION_TYPE, context -> {
-                ModDimension.bootstrapType(context);
                 KunabulaDimension.bootstrapType(context);
             })
             .add(Registries.NOISE_SETTINGS, KunabulaNoiseSettings::bootstrap)
@@ -31,7 +29,6 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifirs::bootstrap)
             .add(Registries.BIOME, ModBiomes::bootstrap)
             .add(Registries.LEVEL_STEM, context -> {
-                ModDimension.bootstrapStem(context);
                 KunabulaDimension.bootstrapStem(context);
             });
 

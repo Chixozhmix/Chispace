@@ -9,22 +9,13 @@
 
   "item.chispace.flesh_staff": "Посох Плоти",
 
-
   "block.chispace.soul_gem_ore": "Камнедушная руда",
   "block.chispace.desecration_altar": "Алтарь Осквернения",
-  "block.chispace.cold_oak_leaves": "Листья хладного дуба",
-  "block.chispace.cold_oak_log": "Бревно хладного дуба",
-  "block.chispace.stripped_cold_oak_log": "Обтесанное бревно хладного дуба",
-  "block.chispace.cold_oak_sapling": "Саженец хладного дуба",
-  "block.chispace.cold_dirt": "Холодная земля",
-  "block.chispace.cold_grass_block": "Блок хладной травы",
   "block.chispace.flesh_altar": "Алтарь Плоти",
 
-  "entity.chispace.mordan_servant": "Слуга Мордана",
   "entity.chispace.flesh_mimic": "Мимик Плоти",
   "entity.chispace.summoned_flesh_blob": "Призванное Желе Плоти",
 
-  "biome.chispace.cold_plaints": "Хладные Поля",
   "biome.chispace.flesh_gorge": "Ущелье Плоти",
 
   "creativetab.chispace.orbs": "Сферы",
@@ -32,9 +23,7 @@
   "creativetab.chispace.items": "Предметы",
 
   "message.chispace.flesh_orb_error": "Вы не можете использовать силу сферы здесь.",
-  "message.chispace.sigil_error": "Вы не можете использовать силу Сигила здесь",
   "message.chispace.flesh_altar_error": "Вам нужно использовать 6 Живой Плоти, чтобы воззвать к силе алтаря",
 
-  "tooltip.flesh_orb.tooltip": "От этой сферы исходит сила, способная отворить двери в пространстве.",
-  "tooltip.sigil.tooltip": "Сигил излучает холод и зловоние грязной воды."
+  "tooltip.flesh_orb.tooltip": "От этой сферы исходит сила, способная отворить двери в пространстве."
 }

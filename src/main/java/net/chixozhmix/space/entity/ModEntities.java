@@ -2,7 +2,6 @@ package net.chixozhmix.space.entity;
 
 import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.entity.custom.FleshMimicEntity;
-import net.chixozhmix.space.entity.custom.MordanServantEntity;
 import net.chixozhmix.space.entity.custom.SummonedFleshBlob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -14,12 +13,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ChiSpace.MOD_ID);
-
-
-    public static final RegistryObject<EntityType<MordanServantEntity>> MORDAN_SERVANT_ENTITY =
-            ENTITIES.register("mordan_servant", () -> EntityType.Builder.of(MordanServantEntity::new, MobCategory.MONSTER)
-                    .sized(0.6f, 1.97f)
-                    .build("mordan_servant"));
 
     public static final RegistryObject<EntityType<FleshMimicEntity>> FLESH_MIMIC_ENTITY =
             ENTITIES.register("flesh_mimic", () -> EntityType.Builder.of(FleshMimicEntity::new, MobCategory.MONSTER)

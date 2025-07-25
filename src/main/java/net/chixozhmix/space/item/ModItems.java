@@ -20,11 +20,6 @@ public class ModItems {
                     .stacksTo(1)
                     .rarity(Rarity.RARE)));
 
-    public static final RegistryObject<Item> MORDAN_SIGIL = ITEMS.register("mordan_sigil",
-            () -> new MordanSigil(new Item.Properties()
-                    .stacksTo(1)
-                    .rarity(Rarity.EPIC)));
-
     //Gem and Ore
     public static final RegistryObject<Item> SOUL_GEM = ITEMS.register("soul_gem",
             () -> new SoulGem(new Item.Properties()

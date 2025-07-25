@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "chispace:cold_plaints",
+  "biomes": "minecraft:dripstone_caves",
   "features": "chispace:soul_gem_ore_placed",
   "step": "underground_ores"
 }

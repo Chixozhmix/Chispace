@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "chispace:block/cold_grass_block_buttom",
-    "side": "chispace:block/cold_grass_block_side",
-    "top": "chispace:block/cold_grass_block_top"
-  }
-}

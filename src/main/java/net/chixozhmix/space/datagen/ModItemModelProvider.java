@@ -1,7 +1,6 @@
 package net.chixozhmix.space.datagen;
 
 import net.chixozhmix.space.ChiSpace;
-import net.chixozhmix.space.block.ModBlocks;
 import net.chixozhmix.space.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,7 +19,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.FLESH_ORB);
-        simpleItem(ModItems.MORDAN_SIGIL);
 
         simpleItem(ModItems.SOUL_GEM);
         simpleItem(ModItems.BLACK_SOUL_GEM);
@@ -28,8 +26,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ETHERIUM_INGOT);
 
         handheldItem(ModItems.ETHERIUM_PICKAXE);
-
-        saplingItem(ModBlocks.COLD_OAK_SAPLING);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

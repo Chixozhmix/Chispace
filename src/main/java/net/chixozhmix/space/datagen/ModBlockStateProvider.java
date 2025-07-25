@@ -5,7 +5,6 @@ import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -26,30 +25,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.FLESH_ALTAR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/flesh_altar")));
-
-        logBlock(((RotatedPillarBlock) ModBlocks.COLD_OAK_LOG.get()));
-        itemModels().withExistingParent(
-                ForgeRegistries.BLOCKS.getKey(ModBlocks.COLD_OAK_LOG.get()).getPath(),
-                modLoc("block/cold_oak_log"));
-
-        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_COLD_OAK_LOG.get()));
-        itemModels().withExistingParent(
-                ForgeRegistries.BLOCKS.getKey(ModBlocks.STRIPPED_COLD_OAK_LOG.get()).getPath(),
-                modLoc("block/stripped_cold_oak_log"));
-
-        leavesBlock(ModBlocks.COLD_OAK_LEAVES);
-
-        saplingBlock(ModBlocks.COLD_OAK_SAPLING);
-
-        createMultiTextureBlock(ModBlocks.COLD_GRASS_BLOCK.get(),
-                "cold_grass_block_side",
-                "cold_grass_block_buttom",
-                "cold_grass_block_top");
-
-        simpleBlock(ModBlocks.COLD_DIRT.get());
-        itemModels().withExistingParent(
-                ForgeRegistries.BLOCKS.getKey(ModBlocks.COLD_DIRT.get()).getPath(),
-                modLoc("block/cold_dirt"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

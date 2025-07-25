@@ -9,41 +9,6 @@ import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 
 public class ModSurfaceRules {
-    private static final SurfaceRules.RuleSource DIRT = makeStateRule(ModBlocks.COLD_DIRT.get());
-    private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(ModBlocks.COLD_GRASS_BLOCK.get());
-    private static final SurfaceRules.RuleSource STONE = makeStateRule(Blocks.STONE);
-
-
-    public static SurfaceRules.RuleSource makeRules() {
-        SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
-
-        // Поверхностные правила для биома с плотью
-        SurfaceRules.RuleSource coldBiomeSurface = SurfaceRules.sequence(
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.COLD_PLAINTS),
-                        SurfaceRules.sequence(
-                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, GRASS_BLOCK),
-                                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, DIRT)
-                        )
-                )
-        );
-
-        // Стандартные поверхностные правила
-        SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(
-                SurfaceRules.ifTrue(isAtOrAboveWaterLevel, GRASS_BLOCK),
-                DIRT
-        );
-
-        return SurfaceRules.sequence(
-                // Специальные биомы (плоть)
-                coldBiomeSurface,
-
-                // Стандартные правила
-                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, grassSurface),
-
-                // Правило по умолчанию (камень под всем)
-                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, STONE)
-        );
-    }
 
     public static SurfaceRules.RuleSource makeRulesNether() {
         return SurfaceRules.sequence(
@@ -52,9 +17,5 @@ public class ModSurfaceRules {
                 SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR,
                         SurfaceRules.state(com.github.elenterius.biomancy.init.ModBlocks.FIBROUS_FLESH.get().defaultBlockState()))
         );
-    }
-
-    private static SurfaceRules.RuleSource makeStateRule(Block block) {
-        return SurfaceRules.state(block.defaultBlockState());
     }
 }

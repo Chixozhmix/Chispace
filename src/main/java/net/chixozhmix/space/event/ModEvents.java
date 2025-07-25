@@ -5,7 +5,6 @@ import com.github.elenterius.biomancy.init.ModEntityTypes;
 import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.entity.ModEntities;
 import net.chixozhmix.space.entity.custom.FleshMimicEntity;
-import net.chixozhmix.space.entity.custom.MordanServantEntity;
 import net.chixozhmix.space.entity.custom.SummonedFleshBlob;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.level.block.Blocks;
@@ -20,7 +19,6 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.MORDAN_SERVANT_ENTITY.get(), MordanServantEntity.createAttributes());
         event.put(ModEntities.FLESH_MIMIC_ENTITY.get(), FleshMimicEntity.createAttributes());
         event.put(ModEntities.SUMMONED_FLESH_BLOB.get(), SummonedFleshBlob.createAttributes());
     }

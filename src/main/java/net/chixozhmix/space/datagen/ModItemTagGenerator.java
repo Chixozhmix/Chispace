@@ -1,7 +1,6 @@
 package net.chixozhmix.space.datagen;
 
 import net.chixozhmix.space.ChiSpace;
-import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -19,8 +18,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.COLD_OAK_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_COLD_OAK_LOG.get().asItem());
+        this.tag(ItemTags.LOGS_THAT_BURN);
     }
 }

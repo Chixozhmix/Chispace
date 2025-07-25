@@ -21,14 +21,6 @@ public class ModOverworldRegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        this.addBiome(mapper,
-                Climate.Parameter.point(0.5f), // temperature
-                Climate.Parameter.point(0.0f), // humidity
-                Climate.Parameter.point(0.0f), // continentalness
-                Climate.Parameter.point(0.0f), // erosion
-                Climate.Parameter.point(0.0f), // depth
-                Climate.Parameter.point(0.0f), // weirdness
-                0, // offset
-                ModBiomes.COLD_PLAINTS);
+
     }
 }

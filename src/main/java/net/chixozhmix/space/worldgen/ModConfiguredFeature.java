@@ -22,10 +22,7 @@ import java.util.List;
 
 public class ModConfiguredFeature {
     //Ore Demension Key
-    public static final ResourceKey<ConfiguredFeature<?, ?>> COLD_PLANTS_SOUL_GEM_ORE_KEY = registerKey("soul_gem_ore");
-
-    //Trees Key
-     public static final ResourceKey<ConfiguredFeature<?, ?>> COLD_OAK_KEY = registerKey("cold_oak_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_GEM_ORE_KEY = registerKey("soul_gem_ore");
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(ChiSpace.MOD_ID, name));
@@ -40,17 +37,7 @@ public class ModConfiguredFeature {
                 ModBlocks.SOUL_GEM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.SOUL_GEM_ORE.get().defaultBlockState()));
 
-        register(context, COLD_PLANTS_SOUL_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(coldPlantsSoulGemOre, 9));
-
-        //Trees
-        register(context, COLD_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.COLD_OAK_LOG.get()),
-                new StraightTrunkPlacer(5, 4, 3),
-
-                BlockStateProvider.simple(ModBlocks.COLD_OAK_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
-
-                new TwoLayersFeatureSize(1,0,2)).build());
+        register(context, SOUL_GEM_ORE_KEY, Feature.ORE, new OreConfiguration(coldPlantsSoulGemOre, 9));
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>>

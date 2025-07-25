@@ -5,7 +5,6 @@ import net.chixozhmix.space.block.ModBlocks;
 import net.chixozhmix.space.block.entity.ModBlockEntities;
 import net.chixozhmix.space.entity.ModEntities;
 import net.chixozhmix.space.entity.client.FleshMimicRenderer;
-import net.chixozhmix.space.entity.client.MordanServantRenderer;
 import net.chixozhmix.space.entity.client.SummonedFleshBlobRenderer;
 import net.chixozhmix.space.item.ModCreativeTab;
 import net.chixozhmix.space.item.ModItems;
@@ -69,7 +68,6 @@ public class ChiSpace
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.NETHER, MOD_ID, ModSurfaceRules.makeRulesNether());
         });
     }
@@ -95,7 +93,6 @@ public class ChiSpace
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             MenuScreens.register(ModMenuTypes.DESECRATION_ALTAR_MENU.get(), DesecrationAltarScreen::new);
-            EntityRenderers.register(ModEntities.MORDAN_SERVANT_ENTITY.get(), MordanServantRenderer::new);
             EntityRenderers.register(ModEntities.FLESH_MIMIC_ENTITY.get(), FleshMimicRenderer::new);
             EntityRenderers.register(ModEntities.SUMMONED_FLESH_BLOB.get(), SummonedFleshBlobRenderer::new);
         }
