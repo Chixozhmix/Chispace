@@ -1,6 +1,5 @@
 package net.chixozhmix.space.worldgen.feature;
 
-import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
