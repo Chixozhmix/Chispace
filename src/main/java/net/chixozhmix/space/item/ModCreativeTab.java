@@ -31,6 +31,8 @@ public class ModCreativeTab {
                         output.accept(ModBlocks.SOUL_GEM_ORE.get());
                         output.accept(ModBlocks.DESECRATION_ALTAR.get());
                         output.accept(ModBlocks.FLESH_ALTAR.get());
+                        output.accept(ModBlocks.FLESH_VINE_HEAD.get());
+                        output.accept(ModBlocks.FLESH_VINE.get());
                     })
                     .build());
 

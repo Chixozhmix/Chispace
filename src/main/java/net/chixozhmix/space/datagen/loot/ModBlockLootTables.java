@@ -28,6 +28,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.DESECRATION_ALTAR.get());
         this.dropSelf(ModBlocks.FLESH_ALTAR.get());
+
+        this.dropSelf(ModBlocks.FLESH_VINE.get());
+        this.dropSelf(ModBlocks.FLESH_VINE_HEAD.get());
     }
 
     protected LootTable.Builder createSoulBlockDrop(Block pBlock, Item item) {

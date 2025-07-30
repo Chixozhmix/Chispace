@@ -3,9 +3,10 @@ package net.chixozhmix.space.datagen;
 import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,37 +26,39 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.FLESH_ALTAR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/flesh_altar")));
+
+        createVineBlock(ModBlocks.FLESH_VINE_HEAD.get(), ModBlocks.FLESH_VINE.get());
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(),
-                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
-                        new ResourceLocation("minecraft:block/leaves"), "all",
-                        blockTexture(blockRegistryObject.get())).renderType("cutout"));
-    }
+    private void createVineBlock(Block vineHead, Block vineBody) {
+        // Модель для головы лианы
+        ModelFile vineHeadModel = models().cross(
+                ForgeRegistries.BLOCKS.getKey(vineHead).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(vineHead).getPath())
+        ).renderType("cutout");  // renderType вызывается у ModelFile, а не у ResourceLocation
 
-    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
-        simpleBlock(blockRegistryObject.get(), models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
-                blockTexture(blockRegistryObject.get())).renderType("cutout"));
-    }
+        // Модель для тела лианы
+        ModelFile vineBodyModel = models().cross(
+                ForgeRegistries.BLOCKS.getKey(vineBody).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(vineBody).getPath())
+        ).renderType("cutout");
 
-    private void createMultiTextureBlock(Block block, String sideTex, String bottomTex, String topTex) {
-        // Создаем модель куба с разными текстурами
-        ModelFile model = models().cubeBottomTop(
-                ForgeRegistries.BLOCKS.getKey(block).getPath(),
-                modLoc("block/" + sideTex),
-                modLoc("block/" + bottomTex),
-                modLoc("block/" + topTex)
-        );
+        // Blockstate для головы лианы
+        getVariantBuilder(vineHead)
+                .forAllStates(state -> ConfiguredModel.builder()
+                        .modelFile(vineHeadModel)
+                        .build()
+                );
 
-        // Создаем простой blockstate (все стороны одинаковые)
-        simpleBlock(block, model);
+        // Blockstate для тела лианы
+        simpleBlock(vineBody, vineBodyModel);
 
-        // Создаем модель предмета
-        simpleBlockItem(block, model);
+        // Модели предметов
+        simpleBlockItem(vineHead, vineHeadModel);
+        simpleBlockItem(vineBody, vineBodyModel);
     }
 }

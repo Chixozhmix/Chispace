@@ -1,4 +1,6 @@
-// 1.20.1	2025-07-25T19:24:10.6252501	Loot Tables
+// 1.20.1	2025-07-30T14:07:41.7390477	Loot Tables
 c4ba4b6820c8789b88bd5cd081e4805e577c5742 data/chispace/loot_tables/blocks/desecration_altar.json
 9256fce6ed88d6113aacba818b25f971d70e7688 data/chispace/loot_tables/blocks/flesh_altar.json
+80b7f9abfa4a87ef3f830ca4f1e4389cdd6fe5f2 data/chispace/loot_tables/blocks/flesh_vine.json
+fc21f5859068c070a86fe374091aa14dbc07f5ba data/chispace/loot_tables/blocks/flesh_vine_head.json
 11126783e8e3b47bdbe4461e0538bbcc3c46f66b data/chispace/loot_tables/blocks/soul_gem_ore.json

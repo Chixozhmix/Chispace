@@ -1,8 +1,14 @@
-// 1.20.1	2025-07-25T19:24:10.6182678	Block States: chispace
+// 1.20.1	2025-07-30T14:07:41.7360561	Block States: chispace
 1d442518df8e2ecd4098fa21e6a25a2d6d3810fa assets/chispace/blockstates/desecration_altar.json
 4575c9161c3f21cdb95d67f017a365037f7170a0 assets/chispace/blockstates/flesh_altar.json
+4514f0bb1e4110c8ac6e3ef1507cd972605753c0 assets/chispace/blockstates/flesh_vine.json
+755fc31b3c44ee8d6ec9007646500319c3566a70 assets/chispace/blockstates/flesh_vine_head.json
 e1a1a894114af30ed32bf9009326b83c334946c3 assets/chispace/blockstates/soul_gem_ore.json
+4c945307c4086b8ba704c6583fdb5c1f637deffd assets/chispace/models/block/flesh_vine.json
+5d4e650a818c9cb7630b1da3243a218bbcd96be8 assets/chispace/models/block/flesh_vine_head.json
 f21cd036e751934019ba0ce4771a634f3489c4e0 assets/chispace/models/block/soul_gem_ore.json
 c30bef13060089d53d3a38abe056dd6f8b28fb4d assets/chispace/models/item/desecration_altar.json
 9061562dd481f552382be36fbc57d659276a3790 assets/chispace/models/item/flesh_altar.json
+948f03548618aec59ed655e689a6300c2ba67cc4 assets/chispace/models/item/flesh_vine.json
+ff9e08c5184414ace44a4d3f01f939466fdc37c2 assets/chispace/models/item/flesh_vine_head.json
 f88db886817b7fbb633d2c620272a321925126a2 assets/chispace/models/item/soul_gem_ore.json
