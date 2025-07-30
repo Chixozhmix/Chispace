@@ -13,8 +13,11 @@ import net.chixozhmix.space.screen.DesecrationAltarScreen;
 import net.chixozhmix.space.screen.ModMenuTypes;
 import net.chixozhmix.space.worldgen.biome.ModTerrablender;
 import net.chixozhmix.space.worldgen.biome.surface.ModSurfaceRules;
+import net.chixozhmix.space.worldgen.feature.CustomVinesFeature;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +28,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import terrablender.api.SurfaceRuleManager;
 
@@ -36,6 +42,12 @@ public class ChiSpace
     public static final String MOD_ID = "chispace";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static final DeferredRegister<Feature<?>> FEATURES =
+            DeferredRegister.create(ForgeRegistries.FEATURES, MOD_ID);
+
+    public static final RegistryObject<Feature<NoneFeatureConfiguration>> CUSTOM_VINES =
+            FEATURES.register("custom_vines", () -> new CustomVinesFeature(12));
 
     public ChiSpace(FMLJavaModLoadingContext context)
     {
@@ -58,6 +70,9 @@ public class ChiSpace
 
         //Biomes
         ModTerrablender.registerBiomes();
+
+        //Features
+        FEATURES.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

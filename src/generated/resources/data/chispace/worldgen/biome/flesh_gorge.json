@@ -34,6 +34,10 @@
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small"
+    ],
+    [],
+    [
+      "chispace:flesh_vines_placed"
     ]
   ],
   "has_precipitation": false,

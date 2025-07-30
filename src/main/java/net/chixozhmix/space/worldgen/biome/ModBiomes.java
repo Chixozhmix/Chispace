@@ -2,6 +2,7 @@ package net.chixozhmix.space.worldgen.biome;
 
 import com.github.elenterius.biomancy.init.ModEntityTypes;
 import net.chixozhmix.space.ChiSpace;
+import net.chixozhmix.space.worldgen.ModPlacedFeature;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -10,6 +11,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
+import net.minecraft.world.level.levelgen.GenerationStep;
 
 
 public class ModBiomes {
@@ -40,6 +42,8 @@ public class ModBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeature.FLESH_VINES_PLACED_KEY);
 
         // Добавляем особенности генерации для Нижнего мира
         globalNetherGeneration(biomeBuilder);
@@ -73,6 +77,8 @@ public class ModBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeature.FLESH_VINES_PLACED_KEY);
 
         // Добавляем особенности генерации для Нижнего мира
         globalNetherGeneration(biomeBuilder);
