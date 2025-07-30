@@ -44,5 +44,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.LOGS_THAT_BURN);
 
+        this.tag(ModTags.Blocks.HANGING_VINES_GROWABLE)
+                .add(com.github.elenterius.biomancy.init.ModBlocks.FLESH.get())
+                .add(com.github.elenterius.biomancy.init.ModBlocks.FIBROUS_FLESH.get());
+
     }
 }

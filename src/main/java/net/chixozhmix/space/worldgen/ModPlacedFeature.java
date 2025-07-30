@@ -16,8 +16,6 @@ import java.util.List;
 public class ModPlacedFeature {
     public static final ResourceKey<PlacedFeature> SOUL_GEM_ORE_PLACED_KEY = resourceKey("soul_gem_ore_placed");
 
-    public static final ResourceKey<PlacedFeature> COLD_OAK_KEY = resourceKey("cold_oak_placed");
-
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
 
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
