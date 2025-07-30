@@ -46,8 +46,13 @@ public class ChiSpace
     public static final DeferredRegister<Feature<?>> FEATURES =
             DeferredRegister.create(ForgeRegistries.FEATURES, MOD_ID);
 
-    public static final RegistryObject<Feature<NoneFeatureConfiguration>> CUSTOM_VINES =
-            FEATURES.register("custom_vines", () -> new CustomVinesFeature(12));
+    public static final RegistryObject<Feature<NoneFeatureConfiguration>> FLESH_VINES =
+            FEATURES.register("flesh_vines", () ->
+                    new CustomVinesFeature(15, ModBlocks.FLESH_VINE.get(), ModBlocks.FLESH_VINE_HEAD.get(), 10));
+
+    public static final RegistryObject<Feature<NoneFeatureConfiguration>> GUTS_VINES =
+            FEATURES.register("guts_vines", () ->
+                    new CustomVinesFeature(15, ModBlocks.GUTS.get(), ModBlocks.GUTS_HEAD.get(), 10));
 
     public ChiSpace(FMLJavaModLoadingContext context)
     {

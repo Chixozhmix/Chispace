@@ -78,7 +78,7 @@ public class ModBiomes {
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
 
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeature.FLESH_VINES_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeature.GUTS_VINES_PLACED_KEY);
 
         // Добавляем особенности генерации для Нижнего мира
         globalNetherGeneration(biomeBuilder);

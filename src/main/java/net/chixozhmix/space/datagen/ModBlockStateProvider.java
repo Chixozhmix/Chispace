@@ -27,34 +27,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.FLESH_ALTAR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/flesh_altar")));
 
-        createVineBlock(ModBlocks.FLESH_VINE_HEAD.get(), ModBlocks.FLESH_VINE.get());
+        createCustomVineBlock(ModBlocks.FLESH_VINE_HEAD.get(), ModBlocks.FLESH_VINE.get(), "flesh_vine");
+
+        createCustomVineBlock(ModBlocks.GUTS_HEAD.get(), ModBlocks.GUTS.get(), "guts");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void createVineBlock(Block vineHead, Block vineBody) {
+    private void createCustomVineBlock(Block vineHead, Block vineBody, String texturePath) {
         // Модель для головы лианы
         ModelFile vineHeadModel = models().cross(
                 ForgeRegistries.BLOCKS.getKey(vineHead).getPath(),
-                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(vineHead).getPath())
-        ).renderType("cutout");  // renderType вызывается у ModelFile, а не у ResourceLocation
+                modLoc("block/" + texturePath + "_head") // текстура вида "block/blood_vine_head"
+        ).renderType("cutout");
 
         // Модель для тела лианы
         ModelFile vineBodyModel = models().cross(
                 ForgeRegistries.BLOCKS.getKey(vineBody).getPath(),
-                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(vineBody).getPath())
+                modLoc("block/" + texturePath) // текстура вида "block/blood_vine_body"
         ).renderType("cutout");
 
-        // Blockstate для головы лианы
+        // Blockstate для головы
         getVariantBuilder(vineHead)
                 .forAllStates(state -> ConfiguredModel.builder()
                         .modelFile(vineHeadModel)
-                        .build()
-                );
+                        .build());
 
-        // Blockstate для тела лианы
+        // Blockstate для тела
         simpleBlock(vineBody, vineBodyModel);
 
         // Модели предметов

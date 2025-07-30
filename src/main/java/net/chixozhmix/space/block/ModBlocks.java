@@ -1,10 +1,7 @@
 package net.chixozhmix.space.block;
 
 import net.chixozhmix.space.ChiSpace;
-import net.chixozhmix.space.block.custom.DesecrationAltarBlock;
-import net.chixozhmix.space.block.custom.FleshAltar;
-import net.chixozhmix.space.block.custom.FleshVines;
-import net.chixozhmix.space.block.custom.FleshVinesHeadBlock;
+import net.chixozhmix.space.block.custom.*;
 import net.chixozhmix.space.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -37,6 +34,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FLESH_VINE = registerBlock("flesh_vine",
             () -> new FleshVines(BlockBehaviour.Properties.copy(Blocks.KELP_PLANT)));
+
+    public static final RegistryObject<Block> GUTS_HEAD = registerBlock("guts_head",
+            () -> new GutsHeadBlock(BlockBehaviour.Properties.copy(Blocks.KELP)));
+
+    public static final RegistryObject<Block> GUTS = registerBlock("guts",
+            () -> new Guts(BlockBehaviour.Properties.copy(Blocks.KELP_PLANT)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -1,22 +1,27 @@
 package net.chixozhmix.space.worldgen.feature;
 
-import com.mojang.serialization.Codec;
 import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 
 public class CustomVinesFeature extends Feature<NoneFeatureConfiguration> {
-    private static final Direction[] DIRECTIONS = {Direction.DOWN};
-    private final int maxLength; // Максимальная длина лианы
+    private final int maxLength;
+    private final Block vineBlock;
+    private final Block vineHeadBlock;
+    private final int searchRange; // Диапазон поиска опоры сверху
 
-    public CustomVinesFeature(int maxLength) {
+    public CustomVinesFeature(int maxLength, Block vineBlock, Block vineHeadBlock, int searchRange) {
         super(NoneFeatureConfiguration.CODEC);
         this.maxLength = maxLength;
+        this.vineBlock = vineBlock;
+        this.vineHeadBlock = vineHeadBlock;
+        this.searchRange = searchRange;
     }
 
     @Override
@@ -29,9 +34,8 @@ public class CustomVinesFeature extends Feature<NoneFeatureConfiguration> {
             return false;
         }
 
-        // Ищем ближайший твердый блок сверху
         BlockPos.MutableBlockPos mutablePos = origin.mutable();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < searchRange; i++) {
             mutablePos.move(Direction.UP);
             if (world.getBlockState(mutablePos).isSolid()) {
                 return placeVineColumn(world, random, mutablePos.below(), maxLength);
@@ -44,9 +48,14 @@ public class CustomVinesFeature extends Feature<NoneFeatureConfiguration> {
         int length = random.nextIntBetweenInclusive(1, maxLength);
         BlockPos.MutableBlockPos mutablePos = topPos.mutable();
 
-        for (int i = 0; i < length; i++) {
+        // Ставим голову лианы
+        world.setBlock(mutablePos, vineHeadBlock.defaultBlockState(), 2);
+        mutablePos.move(Direction.DOWN);
+
+        // Ставим тело лианы
+        for (int i = 1; i < length; i++) {
             if (world.isEmptyBlock(mutablePos)) {
-                world.setBlock(mutablePos, ModBlocks.FLESH_VINE.get().defaultBlockState(), 2);
+                world.setBlock(mutablePos, vineBlock.defaultBlockState(), 2);
                 mutablePos.move(Direction.DOWN);
             } else {
                 break;
