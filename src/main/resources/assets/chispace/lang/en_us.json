@@ -12,6 +12,10 @@
   "block.chispace.soul_gem_ore": "Soul gem ore",
   "block.chispace.desecration_altar": "Desecration Altar",
   "block.chispace.flesh_altar": "Flesh Altar",
+  "block.chispace.guts": "Guts",
+  "block.chispace.guts_head": "Guts",
+  "block.chispace.flesh_vine": "Flesh Vine",
+  "block.chispace.flesh_vine_head": "Flesh Vine",
 
   "entity.chispace.flesh_mimic": "Flesh Mimic",
   "entity.chispace.summoned_flesh_blob": "Summoned Flesh Blob",

@@ -12,6 +12,10 @@
   "block.chispace.soul_gem_ore": "Камнедушная руда",
   "block.chispace.desecration_altar": "Алтарь Осквернения",
   "block.chispace.flesh_altar": "Алтарь Плоти",
+  "block.chispace.guts": "Кишки",
+  "block.chispace.guts_head": "Кишки",
+  "block.chispace.flesh_vine": "Лианы плоти",
+  "block.chispace.flesh_vine_head": "Лианы плоти",
 
   "entity.chispace.flesh_mimic": "Мимик Плоти",
   "entity.chispace.summoned_flesh_blob": "Призванное Желе Плоти",

@@ -33,6 +33,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FLESH_VINE_HEAD.get());
         this.dropSelf(ModBlocks.GUTS.get());
         this.dropSelf(ModBlocks.GUTS_HEAD.get());
+        this.dropSelf(ModBlocks.TENDONS.get());
     }
 
     protected LootTable.Builder createSoulBlockDrop(Block pBlock, Item item) {

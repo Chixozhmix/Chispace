@@ -41,6 +41,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> GUTS = registerBlock("guts",
             () -> new Guts(BlockBehaviour.Properties.copy(Blocks.KELP_PLANT)));
 
+    public static final RegistryObject<Block> TENDONS = registerBlock("tendons",
+            () -> new Tendons());
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

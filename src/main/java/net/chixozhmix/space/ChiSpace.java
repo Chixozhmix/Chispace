@@ -13,6 +13,7 @@ import net.chixozhmix.space.screen.DesecrationAltarScreen;
 import net.chixozhmix.space.screen.ModMenuTypes;
 import net.chixozhmix.space.worldgen.biome.ModTerrablender;
 import net.chixozhmix.space.worldgen.biome.surface.ModSurfaceRules;
+import net.chixozhmix.space.worldgen.feature.CustomGrassFeature;
 import net.chixozhmix.space.worldgen.feature.CustomVinesFeature;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -53,6 +54,10 @@ public class ChiSpace
     public static final RegistryObject<Feature<NoneFeatureConfiguration>> GUTS_VINES =
             FEATURES.register("guts_vines", () ->
                     new CustomVinesFeature(15, ModBlocks.GUTS.get(), ModBlocks.GUTS_HEAD.get(), 10));
+
+    public static final RegistryObject<Feature<NoneFeatureConfiguration>> TENDONS_GRASS =
+            FEATURES.register("tendons_grass", () ->
+                    new CustomGrassFeature(2, ModBlocks.TENDONS.get(), 35));
 
     public ChiSpace(FMLJavaModLoadingContext context)
     {

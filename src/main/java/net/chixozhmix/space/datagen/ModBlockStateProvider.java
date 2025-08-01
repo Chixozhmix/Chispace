@@ -4,7 +4,6 @@ import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -30,6 +29,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         createCustomVineBlock(ModBlocks.FLESH_VINE_HEAD.get(), ModBlocks.FLESH_VINE.get(), "flesh_vine");
 
         createCustomVineBlock(ModBlocks.GUTS_HEAD.get(), ModBlocks.GUTS.get(), "guts");
+
+        simpleBlockWithItem(ModBlocks.TENDONS.get(),
+                models().withExistingParent("tendons", "block/tinted_cross")
+                        .texture("cross", modLoc("block/tendons"))
+                        .renderType("cutout"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

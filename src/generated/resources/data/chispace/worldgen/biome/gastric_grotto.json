@@ -38,7 +38,8 @@
     ],
     [],
     [
-      "chispace:guts_vines_placed"
+      "chispace:guts_vines_placed",
+      "chispace:tendons_placed"
     ]
   ],
   "has_precipitation": false,

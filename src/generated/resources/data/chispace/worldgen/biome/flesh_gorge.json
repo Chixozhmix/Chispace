@@ -37,7 +37,8 @@
     ],
     [],
     [
-      "chispace:flesh_vines_placed"
+      "chispace:flesh_vines_placed",
+      "chispace:tendons_placed"
     ]
   ],
   "has_precipitation": false,

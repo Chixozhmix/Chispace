@@ -38,6 +38,7 @@ public class ModCreativeTab {
 
                         output.accept(ModBlocks.GUTS.get());
                         output.accept(ModBlocks.GUTS_HEAD.get());
+                        output.accept(ModBlocks.TENDONS.get());
                     })
                     .build());
 

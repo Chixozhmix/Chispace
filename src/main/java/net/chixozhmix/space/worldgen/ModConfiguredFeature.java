@@ -4,12 +4,15 @@ import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
@@ -20,6 +23,7 @@ public class ModConfiguredFeature {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_GEM_ORE_KEY = registerKey("soul_gem_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLESH_VINES_KEY = registerKey("flesh_vines_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GUTS_VINES_KEY = registerKey("guts_vines_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TENDONS_KEY = registerKey("tendons_key");
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(ChiSpace.MOD_ID, name));
@@ -47,6 +51,24 @@ public class ModConfiguredFeature {
                 ChiSpace.GUTS_VINES.get(), // Используем RegistryObject
                 NoneFeatureConfiguration.INSTANCE
         );
+
+        register(context, TENDONS_KEY,
+                ChiSpace.TENDONS_GRASS.get(), // Используем RegistryObject
+                NoneFeatureConfiguration.INSTANCE
+        );
+
+//        register(context, TENDONS_KEY, Feature.RANDOM_PATCH,
+//                new RandomPatchConfiguration(
+//                        32,
+//                        7,
+//                        3,
+//                        PlacementUtils.filtered(
+//                                Feature.SIMPLE_BLOCK,
+//                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TENDONS.get())),
+//                                BlockPredicate.matchesBlocks(com.github.elenterius.biomancy.init.ModBlocks.FIBROUS_FLESH.get(),
+//                                        com.github.elenterius.biomancy.init.ModBlocks.FLESH.get()) // или список блоков
+//                        )
+//                ));
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>>
