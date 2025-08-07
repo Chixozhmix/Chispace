@@ -121,7 +121,6 @@ dependencies {
     implementation fg.deobf("curse.maven:citadel-331936:6002521")
 
     //Biomes O' Planty
-    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:6364065")
     implementation fg.deobf("curse.maven:glitchcore-955399:5787839")
     implementation fg.deobf("curse.maven:terrablender-563928:6290448")
 }
@@ -137,8 +136,7 @@ tasks.named('processResources', ProcessResources).configure {
             loader_version_range: loader_version_range,
             mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_authors: mod_authors, mod_description: mod_description,
-            terrablender_version_range:terrablender_version_range,
-            biomesoplanty_version_range:biomesoplanty_version_range
+            terrablender_version_range:terrablender_version_range
     ]
     inputs.properties replaceProperties
 
