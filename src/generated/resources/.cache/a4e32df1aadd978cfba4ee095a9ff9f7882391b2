@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-17T12:29:52.4613068	Global Loot Modifiers : chispace
-bde37d5a658d3f5d5f0cb515675357cbb4b7d85a data/chispace/loot_modifiers/flesh_orb_from_hungry_living_flesh.json
-1cb39d279054aad563684a703948135102106353 data/chispace/loot_modifiers/flesh_orb_from_living_flesh.json
+// 1.20.1	2025-08-07T16:35:43.9614092	Global Loot Modifiers : chispace
+96fca8113a81e5cc72f7e7c4ee67c0605f7e1abc data/chispace/loot_modifiers/flesh_orb_from_hungry_living_flesh.json
+a4caaa89738e5fbb9bff82ad35cf7bf0fdc4b257 data/chispace/loot_modifiers/flesh_orb_from_living_flesh.json
 857f865863980da3acda95bfab4fccb57c5be804 data/forge/loot_modifiers/global_loot_modifiers.json
