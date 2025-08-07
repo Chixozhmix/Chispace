@@ -5,6 +5,7 @@ import com.github.elenterius.biomancy.init.ModEntityTypes;
 import net.chixozhmix.space.ChiSpace;
 import net.chixozhmix.space.entity.ModEntities;
 import net.chixozhmix.space.entity.custom.FleshMimicEntity;
+import net.chixozhmix.space.entity.custom.NecoEntity;
 import net.chixozhmix.space.entity.custom.SummonedFleshBlob;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.level.block.Blocks;
@@ -21,6 +22,7 @@ public class ModEvents {
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntities.FLESH_MIMIC_ENTITY.get(), FleshMimicEntity.createAttributes());
         event.put(ModEntities.SUMMONED_FLESH_BLOB.get(), SummonedFleshBlob.createAttributes());
+        event.put(ModEntities.NECO_ENTITY.get(), NecoEntity.createAttributes());
     }
 
     @SubscribeEvent

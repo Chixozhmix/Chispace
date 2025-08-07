@@ -1,9 +1,9 @@
-// 1.20.1	2025-08-01T18:42:59.7240976	Registries
+// 1.20.1	2025-08-07T16:00:08.2974687	Registries
 5991dae23a41422f42eae289a3a5a836741075fd data/chispace/dimension/kunambula.json
 5591ff1f8c9a3e82288fc7d9bafe511504379072 data/chispace/dimension_type/kunambula_plants_type.json
 dce44f0c990426a9834bfc0db380c2edceb23183 data/chispace/forge/biome_modifier/add_soul_gem_ore.json
-345dca16637f12a339c6c5da08935ad734108938 data/chispace/worldgen/biome/flesh_gorge.json
-ad73aad1da89c837e1adb904045c9b061eb3a063 data/chispace/worldgen/biome/gastric_grotto.json
+83a93052bc63d966e2f1140159646b531d419fa6 data/chispace/worldgen/biome/flesh_gorge.json
+4634c83a7ba45d2aa3fd64ab9fa269273cd08a8e data/chispace/worldgen/biome/gastric_grotto.json
 5cd5371431d81a791898c699867e727f1d4d724f data/chispace/worldgen/configured_feature/flesh_vines_key.json
 a816879e6a81bd7ef35d057fc053e20760d8c198 data/chispace/worldgen/configured_feature/guts_vines_key.json
 e47157ccc023d1344e165ce0d75a05cbfd1905bb data/chispace/worldgen/configured_feature/soul_gem_ore.json

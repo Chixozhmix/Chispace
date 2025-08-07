@@ -50,26 +50,7 @@
     "axolotls": [],
     "creature": [],
     "misc": [],
-    "monster": [
-      {
-        "type": "biomancy:flesh_cow",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 20
-      },
-      {
-        "type": "biomancy:flesh_chicken",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 20
-      },
-      {
-        "type": "biomancy:flesh_pig",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 30
-      }
-    ],
+    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
