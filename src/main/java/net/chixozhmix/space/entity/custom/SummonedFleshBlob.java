@@ -91,14 +91,9 @@ public class SummonedFleshBlob extends Monster implements GeoEntity {
     @Override
     public void tick() {
         super.tick();
-
-        if(liveTime > 0)
-        {
-            liveTime--;
-
-            if(liveTime < 0)
-                this.kill();
+        liveTime--;
+        if (liveTime <= 0) {
+            this.kill();
         }
-
     }
 }
