@@ -1,5 +1,10 @@
 package net.chixozhmix.space.entity.custom;
 
+import net.chixozhmix.space.sound.ModSound;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -10,7 +15,10 @@ import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
@@ -22,6 +30,8 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class NecoEntity extends Monster implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
+    private int cooldown = 0;
 
     public NecoEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -51,10 +61,20 @@ public class NecoEntity extends Monster implements GeoEntity {
         return Monster.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0D)
                 .add(Attributes.ARMOR, 2.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.30D)
+                .add(Attributes.MOVEMENT_SPEED, 0.35D)
                 .add(Attributes.ATTACK_DAMAGE, 1000.0D) // Урон от незеритового меча
                 .add(Attributes.FOLLOW_RANGE, 20.0D) // Дистанция обнаружения игрока
                 .add(Attributes.KNOCKBACK_RESISTANCE, 1.0D).build();
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+        return ModSound.NECO_HURT.get();
+    }
+
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return ModSound.NECO_EMBIENT.get();
     }
 
     @Override
@@ -65,5 +85,34 @@ public class NecoEntity extends Monster implements GeoEntity {
         this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
+    }
+
+    @Override
+    protected InteractionResult mobInteract(Player pPlayer, InteractionHand pHand) {
+        ItemStack itemStack = pPlayer.getItemInHand(pHand);
+
+        if(itemStack.getItem() == Items.MILK_BUCKET && !this.level().isClientSide) {
+            cooldown = 140;
+
+            if(!pPlayer.isCreative())
+                itemStack.shrink(1);
+
+            // Проигрываем звук поедания
+            this.playSound(ModSound.NECO_EATING.get(), 1.0F, 1.0F);
+
+            return InteractionResult.SUCCESS;
+        }
+        return super.mobInteract(pPlayer, pHand);
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        if(cooldown > 0) {
+            cooldown--;
+            if(cooldown <= 0) {
+                this.kill();
+            }
+        }
     }
 }

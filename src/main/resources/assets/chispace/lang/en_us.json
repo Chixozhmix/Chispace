@@ -27,6 +27,10 @@
   "creativetab.chispace.blocks": "Blocks",
   "creativetab.chispace.items": "Items",
 
+  "sounds.chispace.neco_nya": "The cat rumbles",
+  "sounds.chispace.pyai_pyai": "The cat hurts",
+  "sounds.chispace.neco_eating": "Neco Eating",
+
   "message.chispace.flesh_orb_error": "You can't use the power of the sphere here.",
   "message.chispace.flesh_altar_error": "You need to use 6 Living Flesh to invoke the power of the altar.",
 

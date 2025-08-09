@@ -1,0 +1,20 @@
+{
+  "nya_nya": {
+    "subtitles": "sounds.chispace.neco_nya",
+    "sounds": [
+      "chispace:nya_nya"
+    ]
+  },
+  "pyai_pyai": {
+    "subtitles": "sounds.chispace.neco_pyai",
+    "sounds": [
+      "chispace:pyai_pyai"
+    ]
+  },
+  "neco_eating": {
+    "subtitles": "sounds.chispace.neco_eating",
+    "sounds": [
+      "chispace:neco_eating"
+    ]
+  }
+}

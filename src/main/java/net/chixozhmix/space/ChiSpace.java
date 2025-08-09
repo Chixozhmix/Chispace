@@ -12,6 +12,7 @@ import net.chixozhmix.space.item.ModItems;
 import net.chixozhmix.space.loot.ModLootModifiers;
 import net.chixozhmix.space.screen.DesecrationAltarScreen;
 import net.chixozhmix.space.screen.ModMenuTypes;
+import net.chixozhmix.space.sound.ModSound;
 import net.chixozhmix.space.worldgen.biome.ModTerrablender;
 import net.chixozhmix.space.worldgen.biome.surface.ModSurfaceRules;
 import net.chixozhmix.space.worldgen.feature.CustomGrassFeature;
@@ -78,6 +79,9 @@ public class ChiSpace
 
         //Entities
         ModEntities.register(modEventBus);
+
+        //Sounds
+        ModSound.register(modEventBus);
 
         //Biomes
         ModTerrablender.registerBiomes();

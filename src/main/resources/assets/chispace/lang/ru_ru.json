@@ -27,6 +27,10 @@
   "creativetab.chispace.blocks": "Блоки",
   "creativetab.chispace.items": "Предметы",
 
+  "sounds.chispace.neco_nya": "Кошечка Урчит",
+  "sounds.chispace.pyai_pyai": "Кошечке Больно",
+  "sounds.chispace.neco_eating": "Кошечка ",
+
   "message.chispace.flesh_orb_error": "Вы не можете использовать силу сферы здесь.",
   "message.chispace.flesh_altar_error": "Вам нужно использовать 6 Живой Плоти, чтобы воззвать к силе алтаря",
 
