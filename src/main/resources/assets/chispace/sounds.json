@@ -16,5 +16,11 @@
     "sounds": [
       "chispace:neco_eating"
     ]
+  },
+  "neco_death": {
+    "subtitles": "sounds.chispace.neco_death",
+    "sounds": [
+      "chispace:neco_death"
+    ]
   }
 }

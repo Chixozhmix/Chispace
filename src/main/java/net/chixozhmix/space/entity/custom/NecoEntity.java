@@ -78,6 +78,11 @@ public class NecoEntity extends Monster implements GeoEntity {
     }
 
     @Override
+    protected SoundEvent getDeathSound() {
+        return ModSound.NECO_DEATH.get();
+    }
+
+    @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1.0D));

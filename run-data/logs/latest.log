@@ -1,58 +1,58 @@
-[09авг.2025 17:28:51.840] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Валера\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, chispace, --all, --output, C:\Modding\Chispace\src\generated\resources, --existing, C:\Modding\Chispace\src\main\resources]
-[09авг.2025 17:28:51.845] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[09авг.2025 17:28:52.000] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[09авг.2025 17:28:52.124] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Валера/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[09авг.2025 17:28:52.640] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09авг.2025 17:28:52.647] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09авг.2025 17:28:52.654] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[09авг.2025 17:28:52.659] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
-[09авг.2025 17:28:53.257] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Валера\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.3.6\3c45bfc25231b129f027d3b917bc15bd77ad4fe3\mixinextras-forge-0.3.6.jar
-[09авг.2025 17:28:53.258] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
-[09авг.2025 17:28:56.967] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[09авг.2025 17:28:57.019] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Валера\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, chispace, --all, --output, C:\Modding\Chispace\src\generated\resources, --existing, C:\Modding\Chispace\src\main\resources]
-[09авг.2025 17:28:57.703] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.706] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.708] [main/INFO] [mixin/]: Remapping refMap glitchcore.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.710] [main/INFO] [mixin/]: Remapping refMap glitchcore.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.715] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.721] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.725] [main/INFO] [mixin/]: Remapping refMap mixins.biomancy.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.729] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.741] [main/INFO] [mixin/]: Remapping refMap Pehkui-refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.746] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.750] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.753] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:28:57.755] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
-[09авг.2025 17:29:00.970] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [chispace]
-[09авг.2025 17:29:01.007] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.6).
-[09авг.2025 17:29:17.820] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+[09авг.2025 20:54:42.111] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Валера\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, chispace, --all, --output, C:\Modding\Chispace\src\generated\resources, --existing, C:\Modding\Chispace\src\main\resources]
+[09авг.2025 20:54:42.121] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[09авг.2025 20:54:42.369] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[09авг.2025 20:54:42.517] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Валера/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[09авг.2025 20:54:43.146] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09авг.2025 20:54:43.152] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09авг.2025 20:54:43.157] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[09авг.2025 20:54:43.166] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Валера\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
+[09авг.2025 20:54:44.275] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Валера\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.3.6\3c45bfc25231b129f027d3b917bc15bd77ad4fe3\mixinextras-forge-0.3.6.jar
+[09авг.2025 20:54:44.276] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
+[09авг.2025 20:54:47.745] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[09авг.2025 20:54:47.834] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Валера\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, chispace, --all, --output, C:\Modding\Chispace\src\generated\resources, --existing, C:\Modding\Chispace\src\main\resources]
+[09авг.2025 20:54:48.798] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.801] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.803] [main/INFO] [mixin/]: Remapping refMap glitchcore.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.806] [main/INFO] [mixin/]: Remapping refMap glitchcore.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.819] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.823] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.828] [main/INFO] [mixin/]: Remapping refMap mixins.biomancy.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.832] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.843] [main/INFO] [mixin/]: Remapping refMap Pehkui-refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.848] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.851] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.853] [main/INFO] [mixin/]: Remapping refMap citadel.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:48.858] [main/INFO] [mixin/]: Remapping refMap alexscaves.refmap.json using C:\Modding\Chispace\build\createSrgToMcp\output.srg
+[09авг.2025 20:54:53.887] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [chispace]
+[09авг.2025 20:54:53.906] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.6).
+[09авг.2025 20:55:09.296] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
 
-[09авг.2025 17:29:19.743] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
-[09авг.2025 17:29:19.744] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
-[09авг.2025 17:29:20.262] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[09авг.2025 17:29:20.264] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[09авг.2025 17:29:20.265] [modloading-worker-0/INFO] [terrablender/]: Registered region chispace:overworld to index 1 for type OVERWORLD
-[09авг.2025 17:29:20.272] [modloading-worker-0/INFO] [terrablender/]: Registered region chispace:nether to index 1 for type NETHER
-[09авг.2025 17:29:21.260] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[09авг.2025 17:29:23.005] [modloading-worker-0/INFO] [Biomancy/ModsCompatHandler]: Initialize Pehkui compat...
-[09авг.2025 17:29:27.594] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
-[09авг.2025 17:29:27.834] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Валера/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[09авг.2025 17:29:27.834] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Валера/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[09авг.2025 17:29:28.411] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[09авг.2025 17:29:28.608] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 195 ms
-[09авг.2025 17:29:28.608] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[09авг.2025 17:29:28.754] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 146 ms
-[09авг.2025 17:29:28.754] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: chispace
-[09авг.2025 17:29:29.044] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: chispace finished after 288 ms
-[09авг.2025 17:29:29.044] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: chispace
-[09авг.2025 17:29:29.058] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: chispace finished after 14 ms
-[09авг.2025 17:29:29.058] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id chispace
-[09авг.2025 17:29:29.095] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id chispace finished after 36 ms
-[09авг.2025 17:29:29.100] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id chispace
-[09авг.2025 17:29:29.105] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id chispace finished after 4 ms
-[09авг.2025 17:29:29.105] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : chispace
-[09авг.2025 17:29:29.123] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : chispace finished after 18 ms
-[09авг.2025 17:29:29.124] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[09авг.2025 17:29:29.195] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 70 ms
-[09авг.2025 17:29:29.195] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 784 ms
-[09авг.2025 17:29:29.244] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 76, old count: 76, new count: 73, removed stale: 4, written: 2
+[09авг.2025 20:55:11.004] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
+[09авг.2025 20:55:11.005] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
+[09авг.2025 20:55:11.569] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[09авг.2025 20:55:11.570] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[09авг.2025 20:55:11.570] [modloading-worker-0/INFO] [terrablender/]: Registered region chispace:overworld to index 1 for type OVERWORLD
+[09авг.2025 20:55:11.570] [modloading-worker-0/INFO] [terrablender/]: Registered region chispace:nether to index 1 for type NETHER
+[09авг.2025 20:55:12.531] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[09авг.2025 20:55:13.331] [modloading-worker-0/INFO] [Biomancy/ModsCompatHandler]: Initialize Pehkui compat...
+[09авг.2025 20:55:16.107] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[09авг.2025 20:55:16.409] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Валера/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[09авг.2025 20:55:16.412] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Валера/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[09авг.2025 20:55:16.751] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[09авг.2025 20:55:16.867] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 115 ms
+[09авг.2025 20:55:16.867] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[09авг.2025 20:55:16.935] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 67 ms
+[09авг.2025 20:55:16.936] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: chispace
+[09авг.2025 20:55:17.166] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: chispace finished after 229 ms
+[09авг.2025 20:55:17.166] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: chispace
+[09авг.2025 20:55:17.177] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: chispace finished after 11 ms
+[09авг.2025 20:55:17.178] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id chispace
+[09авг.2025 20:55:17.219] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id chispace finished after 39 ms
+[09авг.2025 20:55:17.219] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id chispace
+[09авг.2025 20:55:17.222] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id chispace finished after 2 ms
+[09авг.2025 20:55:17.222] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : chispace
+[09авг.2025 20:55:17.229] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : chispace finished after 8 ms
+[09авг.2025 20:55:17.230] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[09авг.2025 20:55:17.257] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 26 ms
+[09авг.2025 20:55:17.258] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 507 ms
+[09авг.2025 20:55:17.270] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 72, old count: 72, new count: 73, removed stale: 0, written: 0

@@ -16,6 +16,7 @@ public class ModSound {
     public static final RegistryObject<SoundEvent> NECO_EMBIENT = registerSoundEvents("nya_nya");
     public static final RegistryObject<SoundEvent> NECO_HURT = registerSoundEvents("pyai_pyai");
     public static final RegistryObject<SoundEvent> NECO_EATING = registerSoundEvents("neco_eating");
+    public static final RegistryObject<SoundEvent> NECO_DEATH = registerSoundEvents("neco_death");
 
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
