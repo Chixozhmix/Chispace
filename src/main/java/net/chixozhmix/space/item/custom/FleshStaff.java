@@ -26,7 +26,6 @@ public class FleshStaff extends Item {
         }
 
         if(!pLevel.isClientSide) {
-            // Создаем экземпляр вашего кастомного ентити вместо IronGolem
             SummonedFleshBlob fleshBlob = new SummonedFleshBlob(ModEntities.SUMMONED_FLESH_BLOB.get(), pLevel);
             fleshBlob.moveTo(pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), pPlayer.getYRot(), 0);
             pLevel.addFreshEntity(fleshBlob);
@@ -52,7 +51,7 @@ public class FleshStaff extends Item {
 
     @Override
     public boolean isValidRepairItem(ItemStack pStack, ItemStack pRepairCandidate) {
-        return pRepairCandidate.getItem() == ModItems.SOUL_GEM.get();
+        return pRepairCandidate.getItem() == ModItems.SOUL_GEM.get() || pRepairCandidate.getItem() == ModItems.BLACK_SOUL_GEM.get();
     }
 
     @Override

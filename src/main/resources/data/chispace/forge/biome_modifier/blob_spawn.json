@@ -3,7 +3,7 @@
   "biomes": "chispace:flesh_gorge",
   "spawners": {
     "type": "biomancy:flesh_blob",
-    "weight": 60,
+    "weight": 30,
     "minCount": 1,
     "maxCount": 3
   }

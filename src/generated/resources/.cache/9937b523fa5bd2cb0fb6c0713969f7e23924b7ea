@@ -1,9 +1,10 @@
-// 1.20.1	2025-07-30T13:25:20.4899302	Tags for minecraft:block mod id chispace
+// 1.20.1	2025-08-09T17:29:29.2185418	Tags for minecraft:block mod id chispace
 9b606f61f16fbf4d5e3d93b3e7bcd2733201cc58 data/chispace/tags/blocks/hanging_vines_growable.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/chispace/tags/blocks/needs_etherium_tool.json
 0e83660a04fa6f3a68466fcb472ecee08ced8846 data/forge/tags/blocks/needs_netherite_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/logs_that_burn.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
 0e83660a04fa6f3a68466fcb472ecee08ced8846 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
 5c1f128b87f3c87f3a691cf170ec6d589e7d44d6 data/minecraft/tags/blocks/needs_diamond_tool.json

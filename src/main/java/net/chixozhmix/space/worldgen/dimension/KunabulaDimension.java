@@ -46,7 +46,7 @@ public class KunabulaDimension {
                 128, // logicalHeight - ограниченная высота как в Незере
                 BlockTags.INFINIBURN_NETHER, // infiniburn - бесконечное горение как в Незере
                 BuiltinDimensionTypes.NETHER_EFFECTS, // effectsLocation - эффекты Незера
-                0.1f, // ambientLight - низкое окружающее освещение
+                0.0f, // ambientLight - низкое окружающее освещение
                 new DimensionType.MonsterSettings(true, true, ConstantInt.of(7), 0))); // monsterSettings - спавн мобов в темноте
     }
 

@@ -61,6 +61,10 @@ public class ChiSpace
             FEATURES.register("tendons_grass", () ->
                     new CustomGrassFeature(2, ModBlocks.TENDONS.get(), 35));
 
+    public static final RegistryObject<Feature<NoneFeatureConfiguration>> BIO_LANTER =
+            FEATURES.register("bio_lantern_gen", () ->
+                    new CustomGrassFeature(2, com.github.elenterius.biomancy.init.ModBlocks.YELLOW_BIO_LANTERN.get(), 25));
+
     public ChiSpace(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();

@@ -21,10 +21,6 @@ public class ModSurfaceRules {
                         SurfaceRules.ifTrue(SurfaceRules.DEEP_UNDER_FLOOR, FIBROUS_FLESH))
 
 
-//                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
-//                        SurfaceRules.state(com.github.elenterius.biomancy.init.ModBlocks.FLESH.get().defaultBlockState())),
-//                SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR,
-//                        SurfaceRules.state(com.github.elenterius.biomancy.init.ModBlocks.FIBROUS_FLESH.get().defaultBlockState()))
         );
     }
 

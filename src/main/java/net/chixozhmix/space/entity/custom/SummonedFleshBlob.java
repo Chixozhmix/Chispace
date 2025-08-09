@@ -26,6 +26,8 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 public class SummonedFleshBlob extends Monster implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
+    private int liveTime = 3600;
+
 
     public SummonedFleshBlob(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -84,5 +86,19 @@ public class SummonedFleshBlob extends Monster implements GeoEntity {
     @Override
     protected SoundEvent getDeathSound() {
         return SoundEvents.SLIME_DEATH;
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+
+        if(liveTime > 0)
+        {
+            liveTime--;
+
+            if(liveTime < 0)
+                this.kill();
+        }
+
     }
 }
